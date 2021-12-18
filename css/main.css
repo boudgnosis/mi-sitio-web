@@ -339,7 +339,7 @@ a {
 }
 
 .contact .contact__container-icons {
-	font-size: 98px;
+	font-size: 6.125rem;
 	color: var(--black);
 }
 
@@ -399,18 +399,83 @@ a {
 
 }
 
+@media screen and (min-width: 320px) and (max-width:480px) {
+	.titles {
+		font-size: 3.5em;
+	}
 	
-@media (min-width: 576px) {
 	.container {
-		width: 576px;
+		width: 300px;
+	}
+
+	.navigation {
+		padding: 5px 15px;
+	}
+
+	.logo {
+		font-size: 1.3em;
+	}
+
+
+	.navigation__menu li {
+		margin: 5px;
+		font-size: 0.57em;
+	}
+
+
+	.title__header-about,
+	.about__me-text  {
+		font-size: 1em;
+	}
+
+	.tecnologys__title {
+		font-size: 2.85em;
+	}
+
+	.tecnologys i {
+		font-size: 2.5em;
+	}
+
+	.card {
+		grid-template-areas: "contOne"
+							"contTwo"
+							"contThree";
+	}
+
+	.card__body {
+		width: 250px;
+	}
+
+	.contact .contact__container-icons {
+		font-size: 4em;
+	}
+}
+	
+@media screen and (min-width: 481px) and (max-width:768px) {
+	.titles {
+		font-size: 4em;
+	}
+	
+	.container {
+		width: 440px;
+	}
+
+	.navigation {
+		padding: 5px 15px;
 	}
 
 	.logo {
 		font-size: 2em;
 	}
 
+
 	.navigation__menu li {
-		margin: 3.5px;
+		margin: 5px;
+		font-size: 0.9em;
+	}
+
+	.title__header-about,
+	.about__me-text  {
 		font-size: 1.1em;
 	}
 
@@ -421,58 +486,18 @@ a {
 	}
 }
 
-@media (min-width: 900px) {
+@media screen and (min-width: 769px) and (max-width:1279px) {
+	.container {
+		width: 700px;
+	}
+
+	.card__body {
+		width: 250px;
+	}
+}
+
+@media screen and (min-width: 1280px) and (max-width:1439px) {
 	.container {
 		width: 1024px;
 	}
-
-	.logo {
-		font-size: 2.2em;
-	}
-
-	.navigation__menu li {
-		margin: 4px;
-		font-size: 1.2em;
-	}
-
-	.card {
-		grid-template-areas: "contOne contTwo"
-		" contThree contFour ";
-	}
-}
-
-@media (min-width: 1800px) {
-	.container {
-		width: 1600px;
-	}
-
-	.logo {
-		font-size: 4em;
-	}
-
-	.navigation__menu li {
-		margin: 14px;
-		font-size: 2em;
-	}
-
-	.titles {
-		font-size: 6.5em;
-	}
-
-	.about__me-text {
-		font-size: 1.8em;
-		line-height: 1.6em;
-	}
-
-	.tecnologys i {
-		font-size: 3.30em;
-	}
-
-	.card {
-		grid-template-areas: "contOne contTwo contThree contFour ";
-	}
-
-	.footer h3 {
-		font-size: 2px;
-	}
-}
+} 
